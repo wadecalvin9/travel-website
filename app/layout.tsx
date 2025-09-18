@@ -1,0 +1,20 @@
+import type React from "react"
+import type { Metadata } from "next"
+import { ClientLayout } from "./clientLayout"
+
+export const metadata: Metadata = {
+  title: "Travel Connect Expeditions",
+  description: "Experience unforgettable safari adventures across East and Southern Africa",
+    generator: 'v0.dev'
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return <ClientLayout>{children}</ClientLayout>
+}
+
+
+import './globals.css'
